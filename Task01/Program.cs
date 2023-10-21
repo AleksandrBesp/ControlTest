@@ -30,7 +30,7 @@ string[] StringArray (int sise)
 //создание нового массва
 string[] NewStringArray(string[] strArr, int sise)
 {
-    int newSise = new Random().Next(1, 3);//
+    int newSise = new Random().Next(1, 3);
     string textStr = "0";
     if(sise <= 3)
     {
@@ -42,10 +42,10 @@ string[] NewStringArray(string[] strArr, int sise)
         int j = new Random().Next(0,sise - 1);
         textStr = strArr[j];
         while (NewStringArrControl(newStrArr, textStr))
-                {
-                    j = new Random().Next(0,sise - 1);
-                    textStr = strArr[j];
-                }
+        {
+            j = new Random().Next(0,sise - 1);
+            textStr = strArr[j];
+        }
  
         newStrArr[ind] = textStr;
     }
